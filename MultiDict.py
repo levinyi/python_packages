@@ -30,14 +30,7 @@ def two_dim_value_sum(thedict, key_a, key_b, value):
 
 
 def two_dim_value_list(thedict, key_a, key_b, val):
-    ''' two dim: the value is a list.
-    dict_a = {
-        'A1' : {'umi1'：['AB','CD','EF'], 
-                'umi8':['DW','KI']},
-        'B2' : {'umi2': ['GB','RE','SD']},
-        'C3' : {'umi3': ['GE','WE','WE','WQ']},
-    }
-    '''
+    ''' two dim: the value is a list.'''
     if key_a in thedict:
         thedict[key_a].setdefault(key_b, []).append(val)
     else:
